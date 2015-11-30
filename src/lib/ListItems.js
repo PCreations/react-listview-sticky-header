@@ -1,23 +1,24 @@
 import React, { Component, PropTypes } from 'react';
+import createFragment from 'react-addons-create-fragment';
 
 export default class ListItem extends Component {
   static propTypes = {
-    items: PropTypes.array.isRequired,
+    items: PropTypes.arrayOf(PropTypes.node).isRequired,
     styles: PropTypes.object.isRequired
   };
 
   render() {
     const { items, styles } = this.props;
     return (
-      <span>
+      <div>
       {
-        Object.keys(items).map(index => {
-          return (
-            <span key={index} style={styles}>{items[index]}<br /></span>
-          );
+        items.map((item, index) => {
+          var child = {};
+          child['listitem_'+index] = React.cloneElement(item, {style: styles});
+          return createFragment(child);
         })
       }
-      </span>
+      </div>
     );
   }
 }

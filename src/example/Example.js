@@ -41,125 +41,96 @@ class App extends Component {
   render() {
    const { data } = this.props;
     return (
-      <ReactListView 
-        data={data} 
+      <ReactListView
+        data={data}
         headerAttName="headerName"
-        itemsAttName="items" 
-        styles={styles}
-      />
+        itemsAttName="items"
+        styles={styles} />
     );
   }
 }
 
 const DATALIST = [
   {
-    headerName : "ListA",
-    items : [{
-      title : "items1"
-    }, {
-      title : "items2"
-    }, {
-      title : "items3"
-    },{
-      title : "items4"
-    },{
-      title : "items5"
-    },{
-      title : "items6"
-    }]
+    headerName : <span>"ListA"</span>,
+    items : [
+      <p>items1</p>,
+      <p>items2</p>,
+      <p>items3</p>,
+      <p>items4</p>,
+      <p>items5</p>,
+      <p>items6</p>,
+    ]
   }, {
     headerName : "ListB",
-    items : [{
-      title : "items1"
-    }, {
-      title : "items2"
-    }, {
-      title : "items3"
-    },{
-      title : "items4"
-    },{
-      title : "items5"
-    },{
-      title : "items6"
-    }]
+    items : [
+      <p>items1</p>,
+      <p>items2</p>,
+      <p>items3</p>,
+      <p>items4</p>,
+      <p>items5</p>,
+      <p>items6</p>,
+    ]
   },{
     headerName : "ListC",
-    items : [{
-      title : "items1"
-    }, {
-      title : "items2"
-    }, {
-      title : "items3"
-    },{
-      title : "items4"
-    },{
-      title : "items5"
-    },{
-      title : "items6"
-    }]
+    items : [
+      <p>items1</p>,
+      <p>items2</p>,
+      <p>items3</p>,
+      <p>items4</p>,
+      <p>items5</p>,
+      <p>items6</p>,
+    ]
   },{
     headerName : "ListD",
-    items : [{
-      title : "items1"
-    }, {
-      title : "items2"
-    }, {
-      title : "items3"
-    },{
-      title : "items4"
-    },{
-      title : "items5"
-    },{
-      title : "items6"
-    }]
+    items : [
+      <p>items1</p>,
+      <p>items2</p>,
+      <p>items3</p>,
+      <p>items4</p>,
+      <p>items5</p>,
+      <p>items6</p>,
+    ]
   },{
     headerName : "ListE",
-    items : [{
-      title : "items1"
-    }, {
-      title : "items2"
-    }, {
-      title : "items3"
-    },{
-      title : "items4"
-    },{
-      title : "items5"
-    },{
-      title : "items6"
-    }]
+    items : [
+      <p>items1</p>,
+      <p>items2</p>,
+      <p>items3</p>,
+      <p>items4</p>,
+      <p>items5</p>,
+      <p>items6</p>,
+    ]
   },{
     headerName : "ListF",
-    items : [{
-      title : "items1"
-    }, {
-      title : "items2"
-    }, {
-      title : "items3"
-    }]
+    items : [
+      <p>items1</p>,
+      <p>items2</p>,
+      <p>items3</p>,
+      <p>items4</p>,
+      <p>items5</p>,
+      <p>items6</p>,
+    ]
   },{
     headerName : "ListG",
-    items : [{
-      title : "items1"
-    }, {
-      title : "items2"
-    }, {
-      title : "items3"
-    },{
-      title : "items4"
-    },{
-      title : "items5"
-    },{
-      title : "items6"
-    }]
+    items : [
+      <p>items1</p>,
+      <p>items2</p>,
+      <p>items3</p>,
+      <p>items4</p>,
+      <p>items5</p>,
+      <p>items6</p>,
+    ]
   },{
     headerName : "ListH",
-    items : [{
-      title : "items1"
-    }, {
-      title : "items2"
-    }, {
-      title : "items3"
-    }]
+    items : [
+      <p>items1</p>,
+      <p>items2</p>,
+      <p>items3</p>,
+      <p>items4</p>,
+      <p>items5</p>,
+      <p>items6</p>,
+    ]
   }
 ];
 

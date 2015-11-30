@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 
 export default class ListHeader extends Component {
   static propTypes = {
-    header: PropTypes.string.isRequired,
+    header: PropTypes.node.isRequired,
     styles: PropTypes.object.isRequired
   };
 
@@ -13,5 +13,5 @@ export default class ListHeader extends Component {
         <div ref="header" style={styles}>{header}</div>
       </div>
     );
-  }  
+  }
 }
